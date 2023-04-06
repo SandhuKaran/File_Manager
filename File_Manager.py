@@ -55,3 +55,27 @@ def delete_directory(dir_path):
         print(f"{dir_path} deleted successfully!")
     except Exception as e:
         print(f"Error deleting {dir_path}: {e}")
+        
+        
+        
+# Example usage
+
+create_file("test.txt")
+
+# rename a file
+rename_file("test.txt", "new_test.txt")
+
+# copy a file
+copy_file("new_test.txt", "test_copy.txt")
+
+# delete a file
+delete_file("new_test.txt")
+
+# create a directory
+create_directory("test_dir")
+
+# rename a directory
+rename_directory("test_dir", "new_test_dir")
+
+# delete a directory
+delete_directory("new_test_dir")
