@@ -48,3 +48,10 @@ def rename_directory(dir_path, new_name):
         print(f"{dir_path} renamed to {new_name} successfully!")
     except Exception as e:
         print(f"Error renaming {dir_path}: {e}")
+        
+def delete_directory(dir_path):
+    try:
+        shutil.rmtree(dir_path)
+        print(f"{dir_path} deleted successfully!")
+    except Exception as e:
+        print(f"Error deleting {dir_path}: {e}")
